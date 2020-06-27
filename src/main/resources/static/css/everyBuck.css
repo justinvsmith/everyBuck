@@ -1,0 +1,301 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #d7dfe3;
+}
+
+h2, h4, .tblHead {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.95em;
+	color: #949DA1;
+}
+
+h2 {
+	font-size: 1.3em;
+	color: #4B5256;
+}
+
+h4 {
+	color: #4B5256
+}
+
+p, a, td {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.1em;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+.wrapper {
+    width: 90%;
+	padding-top: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header .right ul {
+	list-style-type: none;
+}
+
+.header .right li {
+	display: inline-block;
+}
+
+.header .right button {
+	border: none;
+	height: 0px;
+	margin: 0px 5px 0px ;
+}
+
+.budgeting, .details {
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.budgeting {
+    width: 50%;
+}
+
+.details {
+    width: 35%;
+}
+
+.category {
+    width: 98%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px #C5C5C5;
+}
+
+.category table {
+    width: 98%;
+  /*   margin-bottom: 15px; */
+}
+
+.category table td, 
+.category table th{
+    padding: 10px;
+    text-align: right;
+}
+
+.category table td:first-of-type, 
+.category table th:first-of-type {
+    text-align: left;
+}
+
+/* .category table:after {
+    content: ""; 
+    display: block; 
+    margin-left: 12px;
+    width: 175%; 
+    border-bottom: 1px solid #C5CCCF;
+} */
+
+.category a {
+    padding:15px 10px;
+    margin: 10px 0px;
+    text-decoration: none;
+}
+
+.hide {
+	display: none;
+}
+
+/*------ right side shenanigans ------ */
+
+ .details table, .transactions table {
+	border-collapse: collapse;
+}
+
+.details td, .transactions td {
+	border-bottom: 1px solid #000000;
+	padding-top: 10px;
+	font-size: 0.9em
+}
+
+.navLinks {
+  list-style-type: none;
+  display: block;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+
+.navLinks li {
+  display: inline-block;
+  padding: 5px;
+}
+
+#planned, #spent, #remaining {
+  display: block;
+  width: 100%;
+  margin: auto;
+  clear: left;
+}
+
+td {
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+}
+
+.transactions h2 {
+	margin-bottom: 20px;
+}
+
+.transactions td:first-of-type {
+	width: 50%; 
+}
+
+
+/*------ table recreations shenanigans ------ */
+
+.outside {
+  padding: 5px;
+  width: 98%;
+  margin: auto;
+}
+
+.budgetMain {
+  width: 66%;
+  margin: auto;
+}
+
+.budgetMain td:nth-last-child(-n+2){
+  text-align: right;
+}
+.newRow{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item-right {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.item-left {
+ margin-top: 13px;
+ height: 20px;
+}
+
+.items{
+  width: 100%;
+  display: flex;
+  margin-top: -10px;
+  justify-content: space-between;
+}
+
+.item-right div {
+  width: 40%;
+  padding: 0px;
+}
+
+.item-right p {
+	text-align: right;
+	margin-top:30px;
+}
+
+.item-left{
+  width: 55%;
+}
+
+.item-left div{
+	padding: 20px 0px 0px 0px;
+}
+
+.hidden>div {
+  display: none;
+}
+
+.visible>div {
+  display: block;
+}
+
+.hide {
+	display:none;
+}
+
+.show {
+	display:block;
+}
+
+
+.meter{
+  	height: 5px; 
+  	width: 100%;
+  	margin-top: -5px;
+	position: relative;
+	background: #C5CCCF;
+}
+
+.meter > span {
+	display: block;
+ 	height: 100%;
+  	position: relative; 
+  	background-color: #3D90D3;
+}
+
+.selected{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/*--- list header right side  ---*/
+.circle, .detailCircle{
+	width: 180px;
+	height: 180px;
+	border-radius: 180px;
+	margin:auto;
+	display: flex;
+	justify-content: center;
+}
+
+.circle {
+	border: 5px solid red;
+	margin-bottom: 20px;
+}
+
+.detailCircle {
+	border: 5px solid #00AAF1;
+}
+
+
+.inserts, .detailInserts {
+	margin-top: 30%;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.category:first-of-type, .circleMessage{
+	display: none;
+}
+
+
